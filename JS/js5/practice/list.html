@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+            let itm2 = localStorage.getItem('list');
+            let parsedItm2 = JSON.parse(itm2);
+            for (let itr of parsedItm2){
+                let block = document.createElement('div');
+                let paragraph = document.createElement('p');
+                block.innerText = `${itr.name}${itr.quantity}${itr.price}`;
+                block.append(paragraph);
+
+                let btn = document.createElement('button');
+                btn.innerText = 'Delete';
+                btn.addEventListener('click',(e)=>{
+                    localStorage.clear();
+                    block.style = 'display:none';
+                })
+                block.append(btn);
+                document.body.appendChild(block);
+            }
+        
+    </script>
+</body>
+</html>
