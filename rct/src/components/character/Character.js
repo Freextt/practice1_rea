@@ -1,9 +1,10 @@
-export default  function Character({image, cName}){
+import Simpsons from "../simpsons/Simpsons";
+export default function Character({item:{name,surname,age,info,photo}}){
     return(
         <div>
-             <h2>{cName}</h2>
-            <img src={image} alt=""/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi assumenda consequuntur distinctio exercitationem mollitia non reiciendis ullam voluptate voluptatem. Esse facere ipsum libero neque odit vel voluptas! Neque, obcaecati.</p>
+            <h2>{name} {surname}. Age - {age}</h2>
+            <img src={photo} alt=""/>
+            <p>{info}</p>
         </div>
     )
 }
