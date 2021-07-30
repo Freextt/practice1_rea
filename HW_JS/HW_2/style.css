@@ -1,0 +1,37 @@
+.target1{
+    display: flex;
+    width: 100%;
+}
+.target1 div{
+    width: 20%;
+    margin: 5px 5px 5px 5px;
+    background-color: aqua;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+.target2{
+    display: flex;
+    width: 100%;
+}
+.target2 div{
+    width: 20%;
+    margin: 5px 5px 5px 5px;
+    background-color: red;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+.product-card{
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    font-family: monospace;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 2px 2px 2px 2px;
+}
+.product-image{
+    width: 400px;
+    height: 400px;
+}
